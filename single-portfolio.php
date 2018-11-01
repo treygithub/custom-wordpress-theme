@@ -23,6 +23,12 @@
             <?php the_content(); ?>
 
             <p>
+
+               Skills tags:  <?php the_terms($post->ID, 'skills'); ?>
+
+            </p>
+
+            <p>
               <a class="button" type="button" href="<?php the_field( 'url' ); ?>">
                 <?php esc_html_e( 'Visit the Site', 'wphierarchy' ); ?>
               </a>
